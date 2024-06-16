@@ -1,0 +1,38 @@
+.newcollection{
+   
+   margin: auto;
+   margin-top: 3rem;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   width: 90vw;
+   hr{
+       width: 10rem;
+    height: 0.35rem;
+    background: black;
+    background-color: rebeccapurple;
+}
+
+}
+.new-items{
+    /* background-color: yellow; */
+    margin-top: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:3rem;
+}
+@media only screen and (max-width: 350px) 
+{
+  
+  .new-items{  
+    width: 350px;
+  }
+}
+
+
+
+

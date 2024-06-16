@@ -1,0 +1,124 @@
+.offer{
+   
+    width: 69vw;
+    height: 42vh;
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-evenly;
+    background: linear-gradient(360deg, #e3ffe7 0%, #d9e7ff 100%);
+
+}
+.offer-left{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    button{
+        display: inline-block;
+        outline: 0;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 4px;
+        font-size: 1.3rem;
+        height: 30px;
+        background-color: #9147ff;
+        color: white;
+        padding: 0 20px
+    }
+    Button:hover{
+        background-color: red;
+    }
+}
+.offer-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        height:42vh ;
+    }
+}
+
+@media only screen and (max-width:786px){
+    .offer{
+        width: 75vw;
+
+    }
+    .offer-left{
+        font-size:1.1rem;
+    }
+   
+}
+@media only screen and (max-width:495px){
+    .offer{
+        width: 72vw;
+
+    }
+    .offer-left{
+        font-size:0.8rem;
+        button{
+            padding: 0 10px;
+        }
+    }
+}
+@media only screen and (max-width:400px){
+    .offer{
+        width: 72vw;
+
+    }
+    .offer-left{
+        font-size:0.5rem;
+        button{
+            padding: 0 5px;
+            font-size: 1rem;
+
+        }
+    }
+    .offer-right{
+        height: 35vh;
+    }
+}
+@media only screen and (max-width:390px){
+    .offer{
+        gap: 0px;
+
+    }
+    .offer-left{
+        font-size:0.5rem;
+        button{
+            padding: 0 5px;
+            font-size: 0.9rem;
+
+        }
+    }
+    .offer-right{
+        height: 30vh;
+    }
+}
+ @media only screen and (max-width:350px){
+
+    .offer{
+       margin-right: 20px;
+    }
+    .offer-left{
+
+        font-size: 0.5rem
+    }
+    .offer-right{
+        img{
+            height: 42vh;
+            width: 100px
+        }
+            
+    }
+} 
+
+

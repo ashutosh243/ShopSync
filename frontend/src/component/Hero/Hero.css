@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  width: 99vw;
+  height: 100vh;
+  background: linear-gradient(360deg, #e3ffe7 0%, #d9e7ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+}
+
+.hero-left {
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  width: 40vw;
+  gap: 2rem;
+}
+
+.hero-data {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 4.5rem;
+    line-height: 8rem;
+    letter-spacing: 5px;
+  }
+
+  p {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+}
+
+.hero-btn {
+  button{
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 1.2em;
+    height: 30px;
+    background-color: #9147ff;
+    color: white;
+    padding: 8px;
+  }
+  button:hover{
+     
+      background-color: red;
+      scale: 1.02;
+  }
+}
+
+.hero-right {
+ 
+  mix-blend-mode:darken;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+@media only screen and (max-width: 1165px) {
+  
+  .hero-left{
+    width: 25vw;
+
+  }
+  .hero-data{
+
+    h1 {
+      font-size: 3.5rem;
+      line-height: 4rem;
+      letter-spacing: 3px;
+    }
+  
+    p {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+  }
+  
+}
+@media only screen and (max-width: 923px) {
+   
+  .hero-right{
+    img{
+      width: 50vw;
+      height: 80vh;
+    }
+  }
+}
+@media only screen and (max-width: 731px) {
+   
+  .hero{
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .hero-left{
+    height: 50vw;
+  }
+  .hero-right{
+    height: 50vw;
+    img{
+      height: 60vh;
+      width: 40vw;
+    }
+  }
+  .hero-data{
+
+    h1 {
+      font-size: 2.0rem;
+      line-height: 3rem;
+      letter-spacing: 3px;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+    }
+  }
+
+}
+@media only screen and (max-width: 585px) 
+{
+  .hero{
+       gap: 10rem;
+  }
+  .hero-right{
+    img{
+      width: 55vw;
+      height: 45vh;
+    }
+  }
+  .hero-data{
+
+    h1 {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      letter-spacing: 3px;
+    }
+  
+    p {
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+    }
+  }
+  .hero-btn{
+    button{
+      padding: 10 20px;
+      font-size: 0.9rem;
+    }
+  }
+}
+@media only screen and (max-width: 350px) 
+{
+  
+  .hero{  
+    width: 370px;
+  }
+  .hero-btn{
+    button{
+      font-size: 0.9rem;
+      padding: 5px;
+    }
+  }
+}

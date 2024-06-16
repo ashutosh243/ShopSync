@@ -1,0 +1,33 @@
+.item{
+   
+    box-sizing: border-box;
+    width: 27rem;
+    height: 33rem;
+    text-align: center;
+    img{
+        width: 27rem;
+        height: 28rem;
+    }
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+}
+.item:hover{
+    transform: scale(1.0099);
+}
+.item-price
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.old-price{
+    text-decoration: line-through;
+    color: red;
+    font-size: 1.2rem;
+
+}
+.new-price{
+    color: rgb(29, 67, 254);
+    font-size: 1.2rem;
+}

@@ -1,0 +1,139 @@
+.addproduct{
+    
+    background-color:  rgba(165, 237, 232, 0.422);
+    margin-top: 2rem;
+    margin-left: 2rem;
+    min-width:40vw;
+    height:32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.addproduct-itemfield{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    input{
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+    }
+}
+.addproduct-price{
+   
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.add-product-selecter{
+  
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+
+}
+.thumbnail-image
+{
+    width: 10rem;
+    height: 8rem;
+
+}
+.input-area{
+    
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .upload-section{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 1232px) {
+    .addproduct-price{
+   
+        flex-direction: column;
+    }
+    .input-area{
+        gap: 1rem;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 664px) {
+    .addproduct-price{
+   
+        flex-direction: column;
+    }
+    .input-area{
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .addproduct{
+
+        min-width: 40vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.add {
+    /* width: 8rem; */
+    background-color: rgb(9, 202, 255);
+    display: block;
+    padding: 0.50rem 2.5rem;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    color: rgba(0, 0, 0, 0.841);
+    border-radius: 19px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.add:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .add {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .add {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    .input-area{
+        /* background-color: rebeccapurple; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

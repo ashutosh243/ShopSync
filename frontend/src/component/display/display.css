@@ -1,0 +1,170 @@
+.mains{
+   display: flex;
+   width: 100vw;
+   height: 75vh;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+  
+}
+.left{
+    display: flex;
+    gap: 1.5rem;
+    height: 60vh;
+    background-color: rgb(246, 246, 246);
+    box-sizing: border-box;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+}
+.col-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 5px;
+    img{
+        width: 8vw;
+        height: 13vh;
+    }
+    
+}
+.main-img{
+    
+    display: flex;
+    img{
+        height:55vh;
+        width: 32vw;
+    }
+    
+    
+}
+.right{
+    
+    box-sizing: border-box;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 5rem;
+    background-color: rgb(246, 246, 246);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+  
+
+}
+.name{
+  font-size: 0.9rem;
+  
+}
+.star{
+
+  margin-bottom: 1rem;
+
+}
+.price{
+   display: flex;
+   gap: 2rem;
+   .old{
+      color: red;
+      text-decoration: line-through;
+      font-size: 1.2rem;
+    }
+   .new{
+         color: blue;
+         font-size: 1.2rem;
+   
+   }
+   
+}
+.size{
+   
+   width: 120px;
+   padding: 2px;
+   display: flex;
+   margin-bottom: 1rem; 
+   gap:5px;
+   margin-top: 1rem;   
+   font-size: 0.5rem;
+   font-weight: bold;
+   div{
+    
+    color: red ;
+    font-size: 1rem;
+   }
+
+}
+.btn{
+    button
+    {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 30px;
+    background-color: #9147ff;
+    color: white;
+    padding: 0 10px;
+    }
+
+    :hover {
+        background-color: red;
+        scale: 1.02;
+    }
+}
+
+button:active {
+    background-color: red;
+    color: white;
+}
+.description{
+ 
+    margin-top: 1rem;
+
+}
+@media only screen and (max-width:956px)
+{
+    .name{
+        font-size: 0.7rem;
+    }
+    .size{
+      font-size: 0.4rem;   
+    }
+}
+@media only screen and (max-width:467px)
+{
+    .mains{
+        height: 100vh;
+        flex-direction: column;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+    }
+    .right{
+        width: 90vw;
+    }
+    .main-img{
+        img{
+        width: 60vw;
+        }
+    }
+    .col-image{
+        img{
+            width: 15vw;
+        }
+    }
+}
+@media only screen and (max-width:350px)
+{
+    .mains{
+           width: 370px;
+    }
+}
+

@@ -1,0 +1,143 @@
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar {
+    width: 120vw;;
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.182) 0px 20px 30px -10px;
+    position:sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+}
+
+.nav-menu {
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    font-size: 2rem;
+    color: yellow;
+
+    hr {
+        width: 80%;
+        background: red;
+        height: 0.13rem;
+        border-radius: 1rem;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+
+}
+
+Link {
+
+    font-size: 5rem;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-right: 3rem;
+
+    img {
+        height: 3rem;
+        width: 3rem;
+        mix-blend-mode:darken;
+        color: black;
+    }
+
+    .btn {
+        display: inline-block;
+        outline: 0;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 4px;
+        font-size: 13px;
+        height: 30px;
+        background-color: #9147ff;
+        color: white;
+        padding: 0 20px;
+
+        
+    }
+    .btn:hover{
+        background-color: red;
+
+    }
+
+    
+
+    .nav-count {
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: rgb(140, 5, 5);
+        color: white;
+        font-size: 1rem;
+        border-radius: 10rem;
+        margin-top: -2rem;
+        margin-left: -5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 731px) {
+    .navbar{
+        height:15rem;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .nav-menu{
+
+        font-size: 1.5rem;
+        gap: 1.5rem;
+       
+    }
+    
+}
+@media only screen and (max-width: 350px) {
+    .navbar{
+        width: 370px;
+    }
+}

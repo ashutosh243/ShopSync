@@ -1,0 +1,59 @@
+.banner{
+    overflow: hidden;
+    img{
+        width: 100vw;
+        height: 55vh;
+    }
+}
+.shopcategeory-product{
+     
+    margin: auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    width: 85vw;
+    
+}
+
+
+ @media only screen and (max-width: 1331px) 
+{
+
+  .shopcategeory-product{
+    grid-template-columns: repeat(3,1fr);
+  }
+}  
+ @media only screen and (max-width: 985px) 
+{
+
+  .shopcategeory-product{
+    grid-template-columns: repeat(2,1fr);
+  }
+}  
+ @media only screen and (max-width: 667px) 
+{
+
+  .shopcategeory-product{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .item{
+    margin: auto;
+
+  }
+}  
+ @media only screen and (max-width: 350px) 
+{
+
+  .banner{
+     width: 370px;
+     img{
+      width: 370px;
+     }
+  }
+  .shopcategeory-product{
+    width: 370px;
+    
+  }
+}  
+

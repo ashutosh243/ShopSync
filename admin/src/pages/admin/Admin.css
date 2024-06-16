@@ -1,0 +1,17 @@
+.admin{
+   display: flex;
+   
+   
+  
+}
+
+@media only screen and (max-width: 737px) {
+   .admin{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   
+}
+
